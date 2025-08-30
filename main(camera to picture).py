@@ -15,6 +15,7 @@ while True:
     #フレーム内の顔と場所を格納
     face_locations, face_names = sfr.detect_known_faces(frame)
 
+
     for face_loc, name in zip(face_locations, face_names):
         y1, x2, y2, x1 = face_loc[0], face_loc[1], face_loc[2], face_loc[3]
 
